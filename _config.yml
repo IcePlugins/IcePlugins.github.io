@@ -16,6 +16,7 @@ url: "https://plugins.cirno.pw" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 permalink: /:title/
+theme: 
 
 # Tracker
 analytics: 'UA-116113247-1'
