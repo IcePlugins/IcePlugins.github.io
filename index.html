@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="home">
+ 
+  
+    <div class="row pack">
+        {% for post in site.posts %}   
+            <div class="col-md-4 card">
+             <a href="{{ post.url | prepend: site.baseurl }}" class="index-anchor">    
+                <div class="panel panel-default">
+                  
+                  {% if post.img %}
+                  <img width="100%" src="{{site.baseurl}}/images/{{post.img}}" alt="{{post.title}}">
+                  {% else %}
+                  {% endif %}
+                  
+                  <div class="panel-body">
+                    <h3 class="panel-title pull-left">{{ post.title | truncate: 40 }}</h3>
+                  </div>
+                  
+                  <div class="panel-body"><small>
+                    {{ post.description | strip_html | strip_newlines | truncate: 160 }}</small>
+                  </div>
+                </div>
+                </a>
+            </div>
+        
+        {% endfor %}
+
+    </div> 
+</div>

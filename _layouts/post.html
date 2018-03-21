@@ -1,0 +1,61 @@
+---
+layout: default
+---
+<div class="row">
+<div class="col-md-8">
+    <article class="post">
+          <header class="post-header">
+            <h2 class="post-title">{{ page.title }}</h2>
+          </header>
+
+          <h3>Description</h3>
+          <p>{{ page.description }}</p>
+          <h3>Documentation</h3>
+          <div class="post-content" style="padding-top: .2em">
+                {{ content }}
+                {% if page.permissions %}
+                    <h4>Permissions</h4>
+                    {% for perm in page.permissions %}
+                        <ul>
+                            <li>
+                                <h5>
+                                    {{ perm.name }}
+                                </h5>
+                                <p>{{ perm.doc }}<p>
+
+                            </li>
+                        </ul>
+                    {% endfor %}
+                {% endif %}
+
+                {% if page.commands %}
+                    <h4>Commands</h4>
+                    {% for comm in page.commands %}
+                        <ul>
+                            <li>
+                                <h5>
+                                    {{ comm.name }}
+                                </h5>
+                                <p>{{ comm.doc }}<p>
+
+                            </li>
+                        </ul>
+                    {% endfor %}
+                {% endif %}
+
+                <h4>Configuration</h4>
+                {% highlight xml %}{{ page.documentation_block }}{% endhighlight %}
+          </div>
+
+    </article>
+</div>
+<div class="col-md-4">
+        <div class="panel-body">
+                <h2 class="text-center">Information</h2>
+                <ul class="list-group">
+                        <li class="list-group-item"><a href="{{ page.download }}">Download</a></li>
+                        <li class="list-group-item"><a href="{{ page.github }}">Github</a></li>
+                      </ul>
+            </div>
+</div>
+</div>
