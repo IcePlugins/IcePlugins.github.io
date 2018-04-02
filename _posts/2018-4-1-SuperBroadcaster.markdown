@@ -28,7 +28,7 @@ documentation_block: |
 
 commands:
     - name: '/superbroadcast "your message" &lt;time&gt;'
-      doc: 'Superbroadcast command. Replace "your message" with your message, quotes included. Replace &lt;time&gt; with the time in seconds that the broadcast should stay on screen. Aliases: /sb and /sbroadcast. Requires superbroadcast.broadcast.'
+      doc: 'Superbroadcast command. Replace "your message" with your message, quotes included. Replace &lt;time&gt; with the time in seconds that the broadcast should stay on screen. Aliases: /sb and /sbroadcast. Requires superbroadcast.broadcast.<br><a href="https://docs.unity3d.com/Manual/StyledText.html">Supports RICH TEXT</a>'
 
 permissions:
     - name: superbroadcast.broadcast
