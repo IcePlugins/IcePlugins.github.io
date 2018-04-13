@@ -12,3 +12,7 @@ All of the plugins listed on this website are my creations.
 Website is built with [Jekyll](https://jekyllrb.com/), theme (I modified it!) is available [here](https://github.com/sharu725/cards).
 
 If you would like to request a plugin or report a bug, you can join the [Discord](https://discord.gg/G2EuW2H).
+
+If you want to throw some bitcoin my way because you are feeling generous, here is my address:
+
+1EtPp79x2xPXSzWagKMvgFqhk4jghhXEip
