@@ -56,4 +56,6 @@ permissions:
     - name: realestate.removehouse
       doc: 'Gives access to /removehouse. Should be admin only.'
 ---
+REQUIRES UCONOMY. IF YOU WANT TO USE AVIECONOMY, USE THE UCONOMYTOAVI WRAPPER ON ROCKETHUB.
+<br />
 Plugin concept <a href="https://hub.rocketmod.net/product/houseplugin/">here</a>. This plugin was abandoned and broken and I was requested to fix it. It was a complete mess, so I just rewrote it.
