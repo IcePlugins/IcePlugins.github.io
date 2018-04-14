@@ -17,6 +17,8 @@ documentation_block: |
     <feePaymentTimeInMinutes>1440</feePaymentTimeInMinutes>
     <!-- If structures inside a home should be destroyed on an eviction. -->
     <destroyStructuresOnEviction>false</destroyStructuresOnEviction>
+    <!-- If a player should not be allowed to build outside of his own home AT ALL. -->
+    <disableBuildingIfNotInHome>false</disableBuildingIfNotInHome>
 
     <!-- Ignore everything below this, it's used for data storage. -->
     <homes />
