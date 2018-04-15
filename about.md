@@ -1,6 +1,6 @@
 ---
 layout: page
-title: IcePlugins
+title: IcePlugins | Open Source Unturned Plugins
 permalink: /about/
 ---
 
