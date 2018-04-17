@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #afced3;
+}
+.jumbotron {
+    background-color: #7ebac9;
+    padding-top: 8em;
+}
+.navbar {
+    background-color: #323337;
+    margin-bottom: 0;
+}
+.btn-primary {
+    background-color: #323337;
+    border-color: #323337;
+}
+.btn-primary:hover {
+    background-color: #bdd4e7;
+    border-color: #bdd4e7;
+}
+.btn:focus {
+    outline: none;
+}
+
+.jumbotron-heading {
+    padding-top: .2em;
+}
+
+.jumbotron-heading, .lead {
+    color: white !important;
+}
+
+.mcard {
+    
+    width: 100%;
+    border: 1px solid transparent;
+    transition: border .4s;
+}
+.mcard:hover {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #323337;
+}
+
+.mcard a {
+    color:inherit;
+    text-decoration: none;
+   }
+
+.mcard a:hover{
+    outline: 0;
+}
+
+.mcard a:hover {
+    color: initial;
+    text-decoration: none;
+}

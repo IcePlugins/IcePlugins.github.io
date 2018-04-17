@@ -1,0 +1,74 @@
+---
+layout: default
+---
+<style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        color: #323337;
+    }
+</style>
+
+<div class="container" style="margin-top:6%;">
+    <div class="row">
+            <div class="card bg-faded">
+                <div class="card-block p-5">
+                        <div class="float-right">
+                                <a onclick="this.blur();" style="display:block;" class="btn btn-primary btn-md" href="{{ page.download }}"><i class="fas fa-arrow-down"> </i> &nbsp; Download</a>
+                                </br>
+                                <a onclick="this.blur();" style="display:block;" class="btn btn-primary btn-md" href="{{ page.github }}"><i class="fab fa-github"></i>&nbsp; Github</i></a>
+                        </div>
+                    <article>
+                        <header>
+                            <h2>{{ page.title }}</h2>
+                        </header>
+
+                        <h3>Description</h3>
+                        <p>{{ page.description }}</p>
+                        <h3>Documentation</h3>
+                        <div style="padding-top: .2em">
+                            {{ content }} {% if page.permissions %}
+                            <h4>Permissions</h4>
+                            {% for perm in page.permissions %}
+                            <ul>
+                                <li>
+                                    <h5>
+                                        {{ perm.name }}
+                                    </h5>
+                                    <p>{{ perm.doc }}
+                                        <p>
+
+                                </li>
+                            </ul>
+                            {% endfor %} {% endif %} {% if page.commands %}
+                            <h4>Commands</h4>
+                            {% for comm in page.commands %}
+                            <ul>
+                                <li>
+                                    <h5>
+                                        {{ comm.name }}
+                                    </h5>
+                                    <p>{{ comm.doc }}
+                                        <p>
+
+                                </li>
+                            </ul>
+                            {% endfor %} {% endif %}
+
+                            <h4>Configuration</h4>
+                            <div>{% highlight xml %}{{ page.documentation_block }}{% endhighlight %}</div>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+    </div>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+</div>
