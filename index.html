@@ -20,7 +20,7 @@ layout: default
         {% for post in site.posts %} {% capture modulo %}{{ forloop.index | modulo: 2 }}{% endcapture %} {% if modulo == '1' %}
         <div class="row">
             {% endif %}
-            <div class="col card-col">
+            <div class="col-sm-6 card-col">
                     <a href="{{ post.url | prepend: site.url }}">
 
                 <div class="card mcard" style="height:100%; width:100%;">
