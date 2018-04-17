@@ -43,16 +43,16 @@ body {
     border-color: #323337;
 }
 
-.mcard a {
+.card-col a {
     color:inherit;
     text-decoration: none;
    }
 
-.mcard a:hover{
+.card-col a:hover{
     outline: 0;
 }
 
-.mcard a:hover {
+.card-col a:hover {
     color: initial;
     text-decoration: none;
 }
