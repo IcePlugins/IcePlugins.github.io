@@ -2,6 +2,7 @@
 body {
     font-family: 'Nunito', sans-serif;
     background-color: #afced3;
+    min-height: 100%;
 }
 .jumbotron {
     background-color: #7ebac9;
