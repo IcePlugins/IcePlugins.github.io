@@ -4,6 +4,20 @@ url: "https://iceplugins.xyz" # the base hostname & protocol for your site, e.g.
 markdown: kramdown
 permalink: /:title/
 
+title: IcePlugins
+description: An Unturned Plugin repository with open source Unturned Plugins.
+author: ExtraConcentratedJuice
+logo: https://iceplugins.xyz/favicon.png
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: https://iceplugins.xyz/favicon.png
+
+plugins:
+  - jekyll-seo-tag
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
