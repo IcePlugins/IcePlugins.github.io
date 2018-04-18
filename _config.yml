@@ -5,7 +5,7 @@ markdown: kramdown
 permalink: /:title/
 
 title: IcePlugins
-description: An Unturned Plugin repository with open source Unturned Plugins.
+description: An Unturned Plugin repository with free and open source plugins.
 author: ExtraConcentratedJuice
 logo: https://iceplugins.xyz/favicon.png
 
