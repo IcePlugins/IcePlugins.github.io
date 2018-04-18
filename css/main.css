@@ -7,6 +7,12 @@ body {
     background-color: #7ebac9;
     padding-top: 8em;
 }
+.footer {
+    margin-top: 1em;
+    padding-top: 1em;
+    padding-bottom: .1em;
+    background-color: #7ebac9;
+}
 .navbar {
     background-color: #323337;
     margin-bottom: 0;
@@ -32,7 +38,6 @@ body {
 }
 
 .mcard {
-    
     width: 100%;
     border: 1px solid transparent;
     transition: border .4s;
@@ -46,13 +51,15 @@ body {
 .card-col a {
     color:inherit;
     text-decoration: none;
-   }
-
-.card-col a:hover{
-    outline: 0;
 }
 
 .card-col a:hover {
+    outline: 0;
+}
+.card-col a:hover {
     color: initial;
     text-decoration: none;
+}
+.faq-card {
+    margin: 10px;
 }
