@@ -23,13 +23,13 @@ layout: default
             <div class="col-sm-6 card-col">
                     <a href="{{ post.url | prepend: site.url }}">
 
-                <div class="card mcard" style="height:100%; width:100%;">
+                <div class="card mcard">
                     <div class="card-body">
                         <h5 class="card-title">{{ post.title | truncate: 40 }}</h5>
                         <p class="card-text">{{ post.description | strip_html | strip_newlines | truncate: 160 }}</p>
                     </div>
 
-                    <div class="card-footer text-muted" style="">
+                    <div class="card-footer text-muted">
                         {{ post.date | date: "%-d %B %Y" }}
                     </div>
 
