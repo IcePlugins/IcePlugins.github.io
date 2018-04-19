@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ExtraCommandLimiter
-description: 'A plugin that allows you to limit command usage to inside or outside of safezones or deadzones.'
+description: 'An Unturned plugin that allows you to limit command usage to inside or outside of safezones or deadzones.'
 download: 'https://github.com/ExtraConcentratedJuice/ExtraCommandLimiter/releases'
 github: 'https://github.com/ExtraConcentratedJuice/ExtraCommandLimiter/'
 documentation_block: |

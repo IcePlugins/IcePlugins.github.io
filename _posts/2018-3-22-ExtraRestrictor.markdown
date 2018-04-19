@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ExtraRestrictor
-description: 'Item restriction plugin using events instead of continuous checks for no lag and with support for group based restrictions.'
+description: 'Item restriction plugin for Unturned using events instead of continuous checks for no lag and with support for group based restrictions.'
 download: 'https://github.com/IcePlugins/ExtraRestrictor/releases'
 github: 'https://github.com/IcePlugins/ExtraRestrictor'
 documentation_block: |

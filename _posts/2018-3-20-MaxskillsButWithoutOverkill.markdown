@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MaxskillsButWithoutOverkill
-description: 'A plugin that gives you maxskills but without the skills that you select. Name is a meme, you can do it with any skill.'
+description: 'An Unturned plugin that gives you maxskills but without the skills that you select. Name is a meme, you can do it with any skill.'
 download: 'https://github.com/ExtraConcentratedJuice/MaxskillsButWithoutOverkill/releases'
 github: 'https://github.com/ExtraConcentratedJuice/MaxskillsButWithoutOverkill/'
 documentation_block: |
