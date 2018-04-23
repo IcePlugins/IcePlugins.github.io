@@ -57,6 +57,8 @@ permissions:
       doc: 'Gives access to /evicthouse. Should be admin only.'
     - name: realestate.removehouse
       doc: 'Gives access to /removehouse. Should be admin only.'
+    - name: realestate.bypass
+      doc: 'Allows users to bypass RealEstate barricade placing restrictions.'
 ---
 REQUIRES UCONOMY. IF YOU WANT TO USE AVIECONOMY, USE THE UCONOMYTOAVI WRAPPER ON ROCKETHUB.
 <br />
