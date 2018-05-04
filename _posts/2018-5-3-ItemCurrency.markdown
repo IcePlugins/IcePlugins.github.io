@@ -5,7 +5,7 @@ description: 'Allows you to use items as currency in the buying/selling of goods
 download: 'https://github.com/IcePlugins/ItemCurrency/releases'
 github: 'https://github.com/IcePlugins/ItemCurrency/'
 documentation_block: |
-<?xml version="1.0" encoding="utf-8"?>
+  <?xml version="1.0" encoding="utf-8"?>
   <ItemCurrencyConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Money>
       <!-- One money element. Id is the ID of the item, value is how much value that item holds. If I have 3 berries in my inventory and they are configured to value 5, then I would have $15. -->
