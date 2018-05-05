@@ -19,6 +19,8 @@ documentation_block: |
     <destroyStructuresOnEviction>false</destroyStructuresOnEviction>
     <!-- If a player should not be allowed to build outside of his own home AT ALL. -->
     <disableBuildingIfNotInHome>false</disableBuildingIfNotInHome>
+    <!-- If players should be allowed to build on vehicles -->
+    <enableBuildingOnVehicles>false</enableBuildingOnVehicles>
 
     <!-- Ignore everything below this, it's used for data storage. -->
     <homes />
