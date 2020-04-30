@@ -17,7 +17,7 @@ description: |
   This plugin is created by TERROR and licensed under the GNU General Public License v3.0.
   <br />
   <br />
-  <a href="https://github.com/TH3AL3Xn">https://github.com/TH3AL3X</a>
+  <a href="https://github.com/TH3AL3X">https://github.com/TH3AL3X</a>
 download: 'https://github.com/IcePlugins/VehicleEssentials/releases'
 github: 'https://github.com/IcePlugins/VehicleEssentials/'
 documentation_block: |
