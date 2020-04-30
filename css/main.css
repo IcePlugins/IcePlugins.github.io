@@ -47,7 +47,7 @@ body {
 .ui.segment.masthead {
     background: #7ebac9 url('/images/iceplugins.png') no-repeat;
     background-size: 400px;
-    background-position: right 14em bottom -125px;
+    background-position: right 6vw bottom -125px;
 }
 
 .footer {
@@ -60,9 +60,7 @@ body {
 }
 
 @media only screen 
-  and (min-device-width: 375px) 
   and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
     .ui.segment.masthead {
         background: #7ebac9;
@@ -103,4 +101,17 @@ body {
 .panel-button {
     min-width: 100%;
     margin-bottom: 0.4em !important;
+}
+
+@media  screen and (min-width: 1800px) {
+    .plugin-rail-small {
+        display: none;
+    }
+}
+
+
+@media  screen and (max-width: 1800px) {
+    .plugin-rail {
+        display: none;
+    }
 }
