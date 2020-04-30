@@ -1,43 +1,40 @@
 ---
-layout: default 
+layout: default
 ---
-<section class="jumbotron jumbotron-fluid text-center">
-    <div class="container">
-        <img class="img-fluid" src="/images/Logo4.png" alt="logo" width=250px/>
-        <h1 class="jumbotron-heading">IcePlugins</h1>
-        <h1 class="lead text-muted">An Unturned plugin repository with a mission to deliver completely open source and free plugins.</h1>
-        <p>
-            <a onclick="this.blur();" href="https://discord.gg/G2EuW2H" class="btn btn-primary">
-                <i class="fab fa-discord"></i> Discord</a>
-            <a onclick="this.blur();" href="https://github.com/iceplugins" class="btn btn-primary">
-                <i class="fab fa-github"></i> GitHub</a>
-        </p>
-    </div>
-</section>
-
-<section>
-    <div class="container">
-        {% for post in site.posts %} {% capture modulo %}{{ forloop.index | modulo: 2 }}{% endcapture %} {% if modulo == '1' %}
-        <div class="row">
-            {% endif %}
-            <div class="col-sm-6 card-col">
-                    <a href="{{ post.url | prepend: site.url }}">
-
-                <div class="card mcard">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ post.title | truncate: 40 }}</h5>
-                        <p class="card-text">{{ post.description | strip_html | strip_newlines | truncate: 160 }}</p>
+{% include masthead.html %}
+<div class="ui segment vertical plugins" style="border-bottom: 0;">
+    <div v-else class="ui container">
+        <div class="ui three stackable cards">
+            {% for post in site.posts %}
+            <div class="ui raised card" href="{{ post.url | prepend: site.url }}">
+                <div class="content">
+                    <span class="right floated"><i class="balance scale icon"></i> {% if post.license %}{{ post.license }}{% else %}WTFPL{% endif %}</span>
+                    <div class="header icefont">
+                        <h3><a href="{{ post.url }}" style="color: inherit;">{{ post.title | truncate: 40 }}</a></h3>
                     </div>
-
-                    <div class="card-footer text-muted">
-                        {{ post.date | date: "%-d %B %Y" }}
+                    <div class="meta icefont">
+                        <span>by {% if post.author %}{{ post.author }}{% else %}ExtraConcentratedJuice{% endif %}</span>
                     </div>
-
+                    <div class="description icefont">
+                        <p>{% if post.description_short %}{{ post.description_short }}{% else %}{{ post.description | strip_html | strip_newlines | truncate: 170 }}{% endif %}</p>
+                    </div>
                 </div>
-                </a>
+                <div class="extra content">
+                    <span class="card-button left floated file alternate">
+                        <a href="{{ post.url | prepend: site.url }}" class="icefont">
+                            <i class="file alternate icon"></i>
+                            Documentation
+                        </a>
+                    </span>
+                    <span class="card-button right floated download">
+                        <a href="{{ post.download }}" class="icefont">
+                            <i class="download icon"></i>
+                            Get
+                        </a>
+                    </span>
+                </div>
             </div>
-            {% if modulo == '0' or forloop.last %}
+            {% endfor %}
         </div>
-        <br />{% endif %} {% endfor %}
     </div>
-</section>
+</div>
