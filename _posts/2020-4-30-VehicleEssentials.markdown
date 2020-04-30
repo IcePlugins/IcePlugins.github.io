@@ -6,7 +6,7 @@ license: GPL-3.0
 license_url: https://www.gnu.org/licenses/gpl-3.0.en.html
 description_short: Break wheels, damage your car more realistically with VehicleEssentials.
 description: |
-  VehicleEssentials makes cars in Unturned more prone to accidents. With accident effects in addition to a belt system, configurable in your own way, you can break a wheel, have nausea in a car crash, get hurt in a car crash, etc.
+  VehicleEssentials makes car accidents in Unturned more realistic. With accident effects in addition to a belt system, configurable in your own way, you can break a wheel, have nausea in a car crash, get hurt in a car crash, etc.
   <br />
   <br />
   This plugin requires the Belt UI workshop plugin for effects.
