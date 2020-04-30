@@ -3,7 +3,7 @@ layout: default
 ---
 {% include masthead.html %}
 <div class="ui container expand-to-bottom">
-    <div class="ui segment inner-segment icefont about">
+    <div class="ui clearing segment inner-segment icefont about">
         <div class="ui right very close rail plugin-rail">
             <div class="ui segment" style="border: none; border-radius: 0;">
                 <h3>
@@ -15,16 +15,18 @@ layout: default
                 <a href="{{ page.github }}" class="ui large button panel-button"><i class="github icon"></i>Github</a>
             </div>
         </div>
-        <div class="plugin-rail-small">
-            <h3 class="icefont">
-                Licensed Under <a
-                    href="{% if page.license_url %}{{page.license_url}}{% else %}http://www.wtfpl.net/about/{% endif %}">{% if page.license %}{{page.license}}{% else %}WTFPL{% endif %}</a>
-            </h3>
-            <a href="{{ page.download }}" class="ui large button"><i class="download icon"></i>Download</a>
-            </a> <a href="{{ page.github }}" class="ui large button"><i class="github icon"></i>Github</a>
-        </div>
 
-        <h1 class="icefont plugin-title"><i class="plug icon"></i> {{ page.title }}<small> by
+        <h3 class="icefont ui right floated centered header">
+            <a href="{{ page.download }}" class="ui right floated large button"><i
+                    class="download icon"></i>Download</a>
+            <a href="{{ page.github }}" class="ui right floated large button"><i class="github icon"></i>Github</a>
+            <br />
+            <br />
+            Licensed Under <a
+                href="{% if page.license_url %}{{page.license_url}}{% else %}http://www.wtfpl.net/about/{% endif %}">{% if page.license %}{{page.license}}{% else %}WTFPL{% endif %}</a>
+        </h3>
+
+        <h1 class="icefont plugin-title ui "><i class="plug icon"></i> {{ page.title }}<small> by
                 {% if page.author %}{{ page.author }}{% else %}ExtraConcentratedJuice{% endif %}</small></h1>
         <h2 class="about-text icefont">{{ page.description }}</h2>
         <h2 class="icefont">Documentation</h2>
