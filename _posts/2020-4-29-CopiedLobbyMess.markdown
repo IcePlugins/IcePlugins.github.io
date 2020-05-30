@@ -1,10 +1,18 @@
 ---
 layout: post
 title: CopiedLobbyMess
+author: AtiLion
+license: GPL-3.0
+license_url: https://www.gnu.org/licenses/gpl-3.0.en.html
+description_short: Messes with the server information presented when you click on the server in the multiplayer menu. Modify plugins, etc.
 description: |
   Messes with the server information presented when you click on the server in the multiplayer menu. Can make RocketMod invisible, modify workshop items, hide plugins, and a bunch of other cool stuff.
-   This plugin is created by AtiLion and licensed under the GNU General Public License v3.0.
-  https://github.com/AtiLion
+  <br />
+  <br />
+  This plugin is created by AtiLion and licensed under the GNU General Public License v3.0.
+  <br />
+  <br />
+  <a href="https://github.com/AtiLion">https://github.com/AtiLion</a>
 download: 'https://github.com/IcePlugins/CopiedLobbyMess/releases'
 github: 'https://github.com/IcePlugins/CopiedLobbyMess/'
 documentation_block: |

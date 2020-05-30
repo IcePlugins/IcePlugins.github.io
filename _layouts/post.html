@@ -1,74 +1,82 @@
 ---
 layout: default
 ---
+{% include masthead.html %}
+<div class="ui container expand-to-bottom">
+    <div class="ui clearing segment inner-segment icefont about">
+        <div class="ui right very close rail plugin-rail">
+            <div class="ui segment" style="border: none; border-radius: 0;">
+                <h3>
+                    Licensed Under <a
+                        href="{% if page.license_url %}{{page.license_url}}{% else %}http://www.wtfpl.net/about/{% endif %}">{% if page.license %}{{page.license}}{% else %}WTFPL{% endif %}</a>
+                </h3>
+                <a href="{{ page.download }}" class="ui large button panel-button"><i
+                        class="download icon"></i>Download</a>
+                <a href="{{ page.github }}" class="ui large button panel-button"><i class="github icon"></i>Github</a>
+            </div>
+        </div>
+
+        <h3 class="icefont ui right floated centered header plugin-rail-small">
+            <a href="{{ page.download }}" class="ui right floated large button"><i
+                    class="download icon"></i>Download</a>
+            <a href="{{ page.github }}" class="ui right floated large button"><i class="github icon"></i>Github</a>
+            <br />
+            <br />
+            Licensed Under <a
+                href="{% if page.license_url %}{{page.license_url}}{% else %}http://www.wtfpl.net/about/{% endif %}">{% if page.license %}{{page.license}}{% else %}WTFPL{% endif %}</a>
+        </h3>
+
+        <h1 class="icefont plugin-title ui "><i class="plug icon"></i> {{ page.title }}<small> by
+                {% if page.author %}{{ page.author }}{% else %}ExtraConcentratedJuice{% endif %}</small></h1>
+        <h2 class="about-text icefont">{{ page.description }}</h2>
+        <h2 class="icefont">Documentation</h2>
+        <div>
+            {{ content }} {% if page.permissions %}
+            <h4>Permissions</h4>
+            {% for perm in page.permissions %}
+            <ul>
+                <li>
+                    <h5>
+                        {{ perm.name }}
+                    </h5>
+                    <p>{{ perm.doc }}
+                        <p>
+
+                </li>
+            </ul>
+            {% endfor %} {% endif %} {% if page.commands %}
+            <h4>Commands</h4>
+            {% for comm in page.commands %}
+            <ul>
+                <li>
+                    <h5>
+                        {{ comm.name }}
+                    </h5>
+                    <p>{{ comm.doc }}
+                        <p>
+
+                </li>
+            </ul>
+            {% endfor %} {% endif %}
+
+            <h4>Configuration</h4>
+            <div>{% highlight xml %}{{ page.documentation_block }}{% endhighlight %}</div>
+        </div>
+        <script src="https://utteranc.es/client.js"
+        repo="IcePlugins/{{ page.title }}"
+        issue-term="Documentation Comments"
+        theme="github-light"
+        crossorigin="anonymous"
+        async></script>
+    </div>
+</div>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
 <style>
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    p {
-        color: #323337;
+    code {
+        border-radius: 0.8em !important;
     }
 </style>
-
-<div class="container" style="margin-top:6%;">
-    <div class="row">
-            <div class="card bg-faded">
-                <div class="card-block p-5">
-                        <div class="float-right">
-                                <a onclick="this.blur();" style="display:block;" class="btn btn-primary btn-md" href="{{ page.download }}"><i class="fas fa-arrow-down"> </i> &nbsp; Download</a>
-                                </br>
-                                <a onclick="this.blur();" style="display:block;" class="btn btn-primary btn-md" href="{{ page.github }}"><i class="fab fa-github"></i>&nbsp; Github</i></a>
-                        </div>
-                    <article>
-                        <header>
-                            <h2>{{ page.title }}</h2>
-                        </header>
-
-                        <h3>Description</h3>
-                        <p>{{ page.description }}</p>
-                        <h3>Documentation</h3>
-                        <div style="padding-top: .2em">
-                            {{ content }} {% if page.permissions %}
-                            <h4>Permissions</h4>
-                            {% for perm in page.permissions %}
-                            <ul>
-                                <li>
-                                    <h5>
-                                        {{ perm.name }}
-                                    </h5>
-                                    <p>{{ perm.doc }}
-                                        <p>
-
-                                </li>
-                            </ul>
-                            {% endfor %} {% endif %} {% if page.commands %}
-                            <h4>Commands</h4>
-                            {% for comm in page.commands %}
-                            <ul>
-                                <li>
-                                    <h5>
-                                        {{ comm.name }}
-                                    </h5>
-                                    <p>{{ comm.doc }}
-                                        <p>
-
-                                </li>
-                            </ul>
-                            {% endfor %} {% endif %}
-
-                            <h4>Configuration</h4>
-                            <div>{% highlight xml %}{{ page.documentation_block }}{% endhighlight %}</div>
-                        </div>
-
-                    </article>
-                </div>
-            </div>
-    </div>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>
-        hljs.initHighlightingOnLoad();
-    </script>
-</div>

@@ -1,12 +1,14 @@
 ---
+layout: default
+title: Not Found
 permalink: /404.html
 ---
-<!DOCTYPE html>
-<head>
-    <title>404 Not Found</title>
-  </head>
-<body>
-  <h1>NOTHING WAS FOUND.</h1>
-  <h2>MAYBE YOU WANT TO GO BACK?</h2>
-  <h3><a href="{{site.url}}">GO BACK.</a></h3>
-</body>
+<div class="ui grid middle aligned segment inverted" style="height: 100%; margin: 0; background-color: #7ebac9;">
+  <div class="ui column center aligned">
+    <div class="ui inverted statistic">
+      <div class="value">404</div>
+      <div class="label">Not Found</div>
+      <a href="{{ site.url }}">Return</a>
+    </div>
+  </div>
+</div>

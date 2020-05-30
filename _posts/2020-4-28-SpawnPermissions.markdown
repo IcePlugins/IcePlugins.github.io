@@ -1,10 +1,18 @@
 ---
 layout: post
 title: SpawnPermissions
+author: Kr4ken-9
+license: GPL-3.0
+license_url: https://www.gnu.org/licenses/gpl-3.0.en.html
+description_short: Restrictions on /i and /v based on permissions. Works on administrators. Cooldowns only trigger when the command is successful.
 description: |
   Restrictions on /i and /v based on permissions. Works on administrators. Cooldowns only trigger when the command is successful.
-   This plugin is created and maintained by Kr4ken-9 and licensed under the GNU General Public License v3.0.
-  https://github.com/Kr4ken-9
+  <br/>
+  <br/>
+  This plugin is created and maintained by Kr4ken-9 and licensed under the GNU General Public License v3.0.
+  <br/>
+  <br/>
+  <a href="https://github.com/Kr4ken-9">https://github.com/Kr4ken-9</a>
 download: 'https://github.com/IcePlugins/SpawnPermissions/releases'
 github: 'https://github.com/IcePlugins/SpawnPermissions/'
 documentation_block: |

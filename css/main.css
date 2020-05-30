@@ -1,67 +1,117 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 body {
-    font-family: 'Nunito', sans-serif;
     background-color: #afced3;
-    min-height: 100%;
+    font-family: 'Nunito', sans-serif !important;
 }
-.jumbotron {
-    background-color: #7ebac9;
-    padding-top: 8em;
+
+.icefont {
+    font-family: 'Nunito', sans-serif !important;
 }
+
+.navbar>.item {
+    padding: 1.5em !important;
+}
+
+.ui.menu {
+    margin: 0;
+    border-radius: 0;
+}
+
+.masthead {
+    min-height: 30em;
+}
+
+.masthead h1.ui.header {
+    margin-top: 2.4em;
+    font-weight: normal;
+    font-size: 3em;
+}
+
+.masthead h2 {
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.card {
+    border-radius: 0 !important;
+    word-wrap: break-word;
+    min-height: 10em !important;
+}
+
+.plugins,
+.ui.segment.plugins {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.ui.segment.masthead {
+    background: #7ebac9 url('/images/iceplugins.png') no-repeat;
+    background-size: 400px;
+    background-position: right 6vw bottom -125px;
+}
+
 .footer {
-    margin-top: 1em;
-    padding-top: 1em;
-    padding-bottom: .1em;
-    background-color: #7ebac9;
-}
-.navbar {
-    background-color: #323337;
-    margin-bottom: 0;
-}
-.btn-primary {
-    background-color: #323337;
-    border-color: #323337;
-}
-.btn-primary:hover {
-    background-color: #bdd4e7;
-    border-color: #bdd4e7;
-}
-.btn:focus {
-    outline: none;
+    background-color: #7ebac9 !important;
+    padding: 2em !important;
 }
 
-.jumbotron-heading {
-    padding-top: .2em;
+.footer-text {
+    color: rgba(255,255,255,.9) !important;
 }
 
-.jumbotron-heading, .lead {
-    color: white !important;
+@media only screen 
+  and (max-device-width: 812px) 
+  and (orientation: portrait) { 
+    .ui.segment.masthead {
+        background: #7ebac9;
+    }
 }
 
-.mcard {
-    height: 100%;
-    width: 100%;
-    border: 1px solid transparent;
-    transition: border .4s;
-}
-.mcard:hover {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #323337;
+.guideline {
+    color: black;
 }
 
-.card-col a {
-    color:inherit;
-    text-decoration: none;
+.depressed {
+    background-color: white !important;
+    color: black !important;
 }
 
-.card-col a:hover {
-    outline: 0;
+.card-button {
+    font-weight: 600;
 }
-.card-col a:hover {
-    color: initial;
-    text-decoration: none;
+.card>.content>.description {
+    font-size: 1.1em;
 }
-.faq-card {
-    margin: 10px;
+
+.inner-segment {
+    border-radius: 0 !important;
+    border: none !important;
+    min-height: 80vh;
+}
+
+.expand-to-bottom {
+    min-height: 80vh;
+}
+
+.about-text {
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+.panel-button {
+    min-width: 100%;
+    margin-bottom: 0.4em !important;
+}
+
+@media  screen and (min-width: 1800px) {
+    .plugin-rail-small {
+        display: none;
+    }
+}
+
+
+@media  screen and (max-width: 1800px) {
+    .plugin-rail {
+        display: none;
+    }
 }
